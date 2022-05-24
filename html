@@ -1,0 +1,36 @@
+<head>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+	 <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('xOmQzsDrEQk8wWf2I');
+        })();
+    </script>
+	
+	<script src="https://kit.fontawesome.com/18b29ca4c4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+		<script src="https://kit.fontawesome.com/18b29ca4c4.js" crossorigin="anonymous"></script>
+	<a class="btn" onclick="popupToggle();">Tilmed dig vores nyhedsbrev <span style="text-decoration:underline;">her</span> og modtag en gratis planteplakat!</a>
+    <div id="popup">
+        <div class="content" id="contents">
+			<i class="far fa-envelope-open fa-4x"></i>
+            <h2>Bliv vores planteven</h2>
+            <p>Modtag nyheder, tips og tricks, opdateringer om events + en gratis planteplakat til udprint, direkte i din indbakke.</p>
+            <form id="contact-form">
+            <div class="inputBox">
+                <input name="user_email" id="mail" type="email" placeholder="Indtast email her" required>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="Tilmeld mig" class="btn">
+            </div>
+        </form>
+			<p class="small">Ved at tilmelde dig vores nyhedsbrev acceptere du at vi gemmer din email</p>
+        </div>
+        <div id="contentAfter">
+            <h2>Tak for tilmeldingen</h2>
+        </div>
+		<a class="close" onclick="popupToggle();"> <i class="fas fa-times fa-2x"></i> </a>
+    </div>
+	
+	</body>
