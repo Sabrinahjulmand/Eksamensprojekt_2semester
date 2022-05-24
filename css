@@ -1,0 +1,134 @@
+<head>
+	<script src="https://kit.fontawesome.com/18b29ca4c4.js" crossorigin="anonymous"></script>
+</head>
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    }
+
+body {
+    display: flex;
+	flex-direction: column;
+}
+
+.btn{
+    position: relative;
+    padding: 8px 20px;
+    background: #e9a37f;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.5s;
+	text-align: center;
+}
+
+.btn:hover{
+    background: #db7f50;
+	color:black;
+}
+
+#popup{
+    position: fixed;
+    top: -100%;
+    left: 33%;
+    transform: translate (-50%, -50%);
+    z-index: 1000;
+    background: #f6c8ae;
+    width: 33vw;
+    padding: 80px 50px 50px;
+    box-shadow: 0 15px 30px black;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+#popup{
+    left: 5%;
+    width: 90vw;
+}
+}
+
+#popup.active{
+    visibility: visible;
+    top: 20%;
+}
+
+#contentAfter{
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    font-size: 24px;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+text-align: center;
+}
+
+#contentAfter.active{
+    visibility: visible;
+}
+
+.content.active{
+    visibility: hidden;
+}
+
+#popup .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#popup .content img{
+    max-width: 80px;
+}
+
+#popup .content h2{
+    margin: 20px 0 10px;
+}
+#popup .content .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top:20px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox input{
+    width: 100%;
+    border: 0.5px solid black;
+    padding: 15px;
+    outline: none;
+}
+
+input[type="email"]{
+	color: white;
+}
+
+
+input[type="submit"]{
+    max-width: 150px;
+    border: none;
+    color: #fff;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.close img{
+    height: 20px;
+}
+
+.small {
+	font-size: 10px;
+	padding-top: 20px;
+}
